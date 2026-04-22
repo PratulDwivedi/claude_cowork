@@ -1,0 +1,55 @@
+# ============================================================
+#  Cowork working folder — .gitignore
+# ============================================================
+
+# --- Generated PDF outputs (regenerable from source .md) -----
+conversions/**/pdf/
+skills/md_to_pdf/examples/*.pdf
+
+# --- Python artifacts ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- Node / frontend (if you add any) ------------------------
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+.pnpm-store/
+*.log
+
+# --- Environment & secrets -----------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# --- IDE / editor --------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# --- OS-generated --------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude / Cowork session metadata (if any lands here) ----
+.claude/
+.cowork/

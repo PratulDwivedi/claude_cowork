@@ -1,0 +1,225 @@
+/* ==========================================================================
+   md_to_pdf — BRANDED THEME TEMPLATE
+   -----------------------------------------------------------------------
+   Customize this file to match your company / personal brand.
+   The variables in the :root block at the top are the ones you'll most
+   commonly change. Everything below that just uses them.
+   ========================================================================== */
+
+:root {
+    /* ---- PRIMARY BRAND COLORS ---- */
+    --brand-primary:      #0B5FFF;   /* links, H1 accent, table headers     */
+    --brand-primary-dark: #062D7A;   /* hover / deeper accent               */
+    --brand-accent:       #FF6B35;   /* highlights, callouts                */
+
+    /* ---- TEXT COLORS ---- */
+    --text-body:     #1F2937;        /* body copy                          */
+    --text-heading:  #0F172A;        /* headings                           */
+    --text-muted:    #6B7280;        /* captions, footer, small print      */
+
+    /* ---- BACKGROUNDS ---- */
+    --bg-page:       #FFFFFF;
+    --bg-code:       #F3F4F6;
+    --bg-quote:      #F9FAFB;
+    --bg-callout:    #EEF4FF;
+
+    /* ---- BORDERS ---- */
+    --border-soft:   #E5E7EB;
+    --border-strong: #CBD5E1;
+
+    /* ---- TYPOGRAPHY ---- */
+    --font-body:    "Helvetica", "Arial", sans-serif;
+    --font-heading: "Helvetica", "Arial", sans-serif;
+    --font-mono:    "Consolas", "Menlo", "Monaco", monospace;
+
+    --size-body:   11pt;
+    --size-h1:     24pt;
+    --size-h2:     18pt;
+    --size-h3:     14pt;
+
+    /* ---- PAGE LAYOUT ---- */
+    --page-margin-top:    25mm;
+    --page-margin-side:   20mm;
+    --page-margin-bottom: 22mm;
+
+    /* ---- FOOTER / HEADER TEXT ---- */
+    --footer-text:  "Your Company  ·  Confidential";
+    --header-text:  "";  /* leave "" for no header */
+}
+
+/* ========================================================================== */
+/*  PAGE SETUP (edit --page-* variables above instead of the values below)    */
+/* ========================================================================== */
+@page {
+    size: A4;
+    margin:
+        var(--page-margin-top)
+        var(--page-margin-side)
+        var(--page-margin-bottom)
+        var(--page-margin-side);
+
+    @top-left {
+        content: var(--header-text);
+        font-family: var(--font-body);
+        font-size: 9pt;
+        color: var(--text-muted);
+    }
+    @bottom-left {
+        content: var(--footer-text);
+        font-family: var(--font-body);
+        font-size: 9pt;
+        color: var(--text-muted);
+    }
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: var(--font-body);
+        font-size: 9pt;
+        color: var(--text-muted);
+    }
+}
+
+/* ========================================================================== */
+/*  BASE                                                                      */
+/* ========================================================================== */
+html, body {
+    font-family: var(--font-body);
+    font-size: var(--size-body);
+    line-height: 1.6;
+    color: var(--text-body);
+    background: var(--bg-page);
+}
+
+/* ========================================================================== */
+/*  HEADINGS                                                                  */
+/* ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-heading);
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: var(--size-h1);
+    color: var(--brand-primary);
+    border-bottom: 3px solid var(--brand-primary);
+    padding-bottom: 0.25em;
+    margin-top: 0.2em;
+}
+h2 {
+    font-size: var(--size-h2);
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 0.2em;
+}
+h3 { font-size: var(--size-h3); color: var(--brand-primary-dark); }
+h4 { font-size: 12pt; }
+h5, h6 { font-size: 11pt; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* ========================================================================== */
+/*  TEXT ELEMENTS                                                             */
+/* ========================================================================== */
+p { margin: 0.5em 0 0.9em; }
+a { color: var(--brand-primary); text-decoration: none; font-weight: 500; }
+a:hover { text-decoration: underline; }
+strong { color: var(--text-heading); }
+
+ul, ol { padding-left: 1.7em; margin: 0.4em 0 0.9em; }
+li { margin: 0.2em 0; }
+
+/* Marker color for lists (WeasyPrint supports ::marker) */
+li::marker { color: var(--brand-primary); }
+
+/* ========================================================================== */
+/*  CODE                                                                      */
+/* ========================================================================== */
+code {
+    font-family: var(--font-mono);
+    font-size: 9.5pt;
+    background: var(--bg-code);
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: var(--brand-accent);
+}
+pre {
+    background: var(--bg-code);
+    padding: 12px 14px;
+    border-radius: 6px;
+    border-left: 3px solid var(--brand-primary);
+    overflow-x: auto;
+    font-size: 9.5pt;
+    line-height: 1.5;
+    page-break-inside: avoid;
+}
+pre code {
+    background: transparent;
+    padding: 0;
+    color: var(--text-body);
+}
+
+/* ========================================================================== */
+/*  BLOCKQUOTE                                                                */
+/* ========================================================================== */
+blockquote {
+    margin: 0.9em 0;
+    padding: 0.4em 1.1em;
+    color: var(--text-muted);
+    border-left: 4px solid var(--brand-accent);
+    background: var(--bg-quote);
+    border-radius: 0 4px 4px 0;
+    font-style: italic;
+}
+
+/* ========================================================================== */
+/*  TABLES                                                                    */
+/* ========================================================================== */
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+    font-size: 10pt;
+}
+th {
+    background: var(--brand-primary);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid var(--brand-primary-dark);
+}
+td {
+    border: 1px solid var(--border-soft);
+    padding: 7px 12px;
+}
+tr:nth-child(even) td { background: #fafbfc; }
+
+/* ========================================================================== */
+/*  MISC                                                                      */
+/* ========================================================================== */
+hr {
+    border: none;
+    border-top: 2px solid var(--brand-primary);
+    margin: 1.6em 0;
+    opacity: 0.4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    page-break-inside: avoid;
+}
+
+.admonition {
+    margin: 1em 0;
+    padding: 0.8em 1.1em;
+    border-left: 4px solid var(--brand-primary);
+    background: var(--bg-callout);
+    border-radius: 0 4px 4px 0;
+    page-break-inside: avoid;
+}
+.admonition.warning { border-left-color: #D97706; background: #FFFBEB; }
+.admonition.tip     { border-left-color: #059669; background: #ECFDF5; }
+.admonition-title   { font-weight: 700; margin-bottom: 0.3em; color: var(--text-heading); }
