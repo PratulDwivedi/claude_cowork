@@ -1,0 +1,119 @@
+{
+  "last_run": "2026-04-22T21:30:00",
+  "seen_urls": [
+    {
+      "url": "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf",
+      "title": "The Complete Guide to Building Skills for Claude",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md"
+    },
+    {
+      "url": "https://github.com/anthropics/skills/discussions/435",
+      "title": "55K-word Developer Guide for Building Agent Skills",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md"
+    },
+    {
+      "url": "https://github.com/travisvn/awesome-claude-skills",
+      "title": "Awesome Claude Skills — Curated Community Repository",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md"
+    },
+    {
+      "url": "https://claude.com/blog/building-agents-with-the-claude-agent-sdk",
+      "title": "Building Agents with the Claude Agent SDK",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md"
+    },
+    {
+      "url": "https://github.com/anthropics/skills",
+      "title": "Official Anthropic Skills Repository",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md"
+    },
+    {
+      "url": "https://docs.anthropic.com/en/docs/claude-code/tutorials",
+      "title": "Claude Code Common Workflows",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "title": "232+ Claude Code Skills & Agent Plugins",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://github.com/levnikolaevich/claude-code-skills",
+      "title": "Claude Code Skills Plugin Suite",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://code.claude.com/docs/en/skills",
+      "title": "Extend Claude with skills — Claude Code Docs",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://medium.com/@unicodeveloper/10-must-have-skills-for-claude-and-any-coding-agent-in-2026-b5451b013051",
+      "title": "10 Must-Have Skills for Claude in 2026",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+      "title": "Agent Skills Overview — Claude Platform Docs",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://github.com/botextractai/ai-claude-agent-sdk-skills",
+      "title": "Skills and Agents with the Anthropic Claude Agent SDK",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://github.com/Yarmoluk/custom-skill-developer",
+      "title": "Custom Skill Developer Guide by Yarmoluk",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://yarmoluk.github.io/custom-skill-developer/",
+      "title": "55K-word Developer Guide Web Version",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://dev.to/raxxostudios/best-claude-code-skills-plugins-2026-guide-4ak4",
+      "title": "Best Claude Code Skills & Plugins 2026 Guide",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://dev.to/williamwangai/claude-code-skills-vs-mcp-servers-what-to-use-how-to-install-and-the-best-ones-in-2026-548k",
+      "title": "Claude Code Skills vs MCP Servers 2026",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    },
+    {
+      "url": "https://www.blog.brightcoding.dev/2026/04/17/jamesrochabrunskills-the-revolutionary-claude-code-toolkit",
+      "title": "jamesrochabrun/skills — The Claude Code Toolkit",
+      "date_seen": "2026-04-22",
+      "report_file": "report_2026-04-22_1.md",
+      "skipped": true
+    }
+  ]
+}
