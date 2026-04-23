@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-manage_seen_log.py — Helper for claude_skill_research skill
+manage_seen_log.py — Helper for skill-researcher skill
 
 Usage:
   python manage_seen_log.py init              # Initialize seen_log.json if missing

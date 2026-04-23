@@ -17,12 +17,16 @@ claude_cowork/
 │   │   │   └── README.md          # Theme customization guide
 │   │   └── examples/              # Sample input + rendered PDFs
 │   │
-│   └── claude_skill_research/     # Research new Claude skill tutorials from the web
+│   └── skill-researcher/     # Research new Claude skill tutorials from the web
 │       ├── SKILL.md
 │       ├── references/
 │       │   └── search_sources.md  # Curated search queries & trusted sources
 │       └── scripts/
 │           └── manage_seen_log.py # Helper to manage the seen URL log
+│
+├── build/                         # Packaged .skill files ready to install
+│   ├── md_to_pdf.skill            # Install via Cowork "Save skill" button
+│   └── skill-researcher.skill    # Install via Cowork "Save skill" button
 │
 ├── skill_research/                # Research outputs (auto-generated)
 │   ├── seen_log.json              # Tracks already-processed URLs (no re-fetch)
@@ -44,7 +48,7 @@ Converts Markdown (`.md`) files into styled PDF documents using WeasyPrint. Supp
 **Trigger:** "convert md to pdf", "markdown to pdf", "export this md as PDF"  
 See `skills/md_to_pdf/templates/README.md` for customizing the branded theme.
 
-### `claude_skill_research`
+### `skill-researcher`
 Automatically searches the web for new Claude skill tutorials (official Anthropic + community sources), saves research reports, avoids re-fetching already-seen URLs, and drafts new skills from approved research.
 
 **Three modes:**
@@ -59,3 +63,4 @@ Automatically searches the web for new Claude skill tutorials (official Anthropi
 - Generated PDFs are excluded from git — they're regenerable from source.
 - Research reports and draft skills are auto-generated and can be regenerated; only approved/installed skills should be tracked.
 - Source markdowns and skill code are tracked.
+- `build/` contains packaged `.skill` files. When a new skill is approved and added to `skills/`, rebuild its `.skill` file and place it here.

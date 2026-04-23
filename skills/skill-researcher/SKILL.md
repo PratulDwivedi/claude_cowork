@@ -1,6 +1,6 @@
 ---
-name: claude_skill_research
-description: Automatically research new Claude skill tutorials from the web, save findings, and draft new skills from approved research. Use this skill when the user says "research new Claude skills", "find skill tutorials", "run skill research", "check for new skills", "search for Claude skill ideas", "scan for Claude skill tutorials", or any variation of discovering and preparing new Claude skills. Also trigger when the user approves a research item and wants a draft, e.g. "convert tutorial 2 into a skill", "draft skill from report", "build skill from research", "install draft skill". This skill can also be run on a schedule — trigger when resuming a scheduled skill research run.
+name: skill-researcher
+description: Automatically research new Claude skill tutorials from the web, save findings, and draft new skills from approved research. Use this skill when the user says "research new Claude skills", "find skill tutorials", "run skill research", "check for new skills", "search for Claude skill ideas", "scan for Claude skill tutorials", or any variation of discovering and preparing new Claude skills. Also trigger when the user approves a research item and wants a draft, e.g. "convert tutorial 2 into a skill", "draft skill from report", "build skill from research", "install draft skill". This skill can also be run on a schedule - trigger when resuming a scheduled skill research run.
 allowed-tools: WebSearch, WebFetch, Read, Write, Bash
 ---
 
@@ -240,7 +240,7 @@ Tell the user:
 
 When the user wants to schedule this skill, use the `schedule` skill. The self-contained task prompt to use is:
 
-> Run the claude_skill_research skill in Research Mode:
+> Run the skill-researcher skill in Research Mode:
 > 1. Read the seen log from `/sessions/tender-sweet-dijkstra/mnt/claude_cowork/skill_research/seen_log.json` (initialize it as `{"last_run": null, "seen_urls": []}` if missing).
 > 2. Search the web for new Claude skill tutorials from both official Anthropic sources (docs.anthropic.com, github.com/anthropics) and community sources (GitHub, Reddit, dev blogs, YouTube).
 > 3. Filter out any URLs already present in the seen log.
